@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <title>알고리즘 시각화 도구 (폰트 및 UI 개선)</title>
-<!-- 세련된 한글 UI 폰트 (Pretendard) -->
+
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" />
-<!-- 깔끔한 코딩용 영문 폰트 (JetBrains Mono) -->
+
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
   * { box-sizing: border-box; }
   body { 
     margin: 0; padding: 20px; 
-    background-color: #121212; /* 살짝 더 고급스러운 어두운 배경 */
+    background-color: #121212; 
     color: #f1f3f5; 
-    /* 전체 UI 폰트 적용 */
+
     font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
     display: flex; height: 100vh; gap: 20px;
   }
@@ -22,8 +22,8 @@
   .panel {
     flex: 1;
     display: flex; flex-direction: column;
-    background: #1e1e1e; border-radius: 12px; padding: 25px; /* 모서리를 더 부드럽게 */
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3); /* 은은한 그림자 추가 */
+    background: #1e1e1e; border-radius: 12px; padding: 25px; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
   }
 
   h2 {
@@ -38,7 +38,7 @@
   }
   .bar { 
     flex: 1; background-color: #ced4da; 
-    border-radius: 2px 2px 0 0; /* 막대 윗부분을 둥글게 */
+    border-radius: 2px 2px 0 0;
     transition: background-color 0.02s; 
   }
   .bar.compare { background-color: #ff6b6b; }
@@ -72,11 +72,10 @@
   #btn-stop { background: #fa5252; }
   #btn-stop:hover:not(:disabled) { background: #e03131; }
 
-  /* 수도코드 컨테이너에만 코딩 폰트 적용 */
   .code-container {
     flex: 1; background: #141517; padding: 20px;
     border-radius: 10px; overflow-y: auto; 
-    font-family: 'JetBrains Mono', Consolas, monospace; /* 코딩용 폰트 */
+    font-family: 'JetBrains Mono', Consolas, monospace;
     font-size: 15px; line-height: 1.7; margin-bottom: 20px;
     color: #a9b7c6; border: 1px solid #333;
   }
